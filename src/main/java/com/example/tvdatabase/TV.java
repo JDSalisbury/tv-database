@@ -11,9 +11,7 @@ public class TV {
 	@GeneratedValue
 	private long id;
 	private String model;
-	@SuppressWarnings("unused")
 	private String dateUpdated;
-	@SuppressWarnings("unused")
 	private String price;
 
 	protected TV() {
@@ -26,7 +24,11 @@ public class TV {
 	}
 
 	public Object getModel() {
-
 		return model;
+	}
+
+	@Override
+	public String toString() {
+		return "Model = " + model + ", Date price was updated = " + dateUpdated + ", Price = " + price;
 	}
 }
