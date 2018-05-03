@@ -10,7 +10,6 @@ public class TV {
 	@Id
 	@GeneratedValue
 	private long id;
-	@SuppressWarnings("unused")
 	private String model;
 	@SuppressWarnings("unused")
 	private String dateUpdated;
@@ -24,5 +23,10 @@ public class TV {
 		this.model = model;
 		this.dateUpdated = dateUpdated;
 		this.price = price;
+	}
+
+	public Object getModel() {
+
+		return model;
 	}
 }
